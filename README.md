@@ -95,15 +95,18 @@ To run this project locally, you need a PHP and MySQL environment like **XAMPP**
 ## Screenshots & Demo
 
 ### Signup Page
-![Signup Page](assets/signup.png)
-### Dashboard
-![Dashboard](assets/home.png)
+![Signup Page](public/assets/images/signup.png)
+### Home
+![Home ](public/assets/images/home.png)
 
 ### Quiz Page
-![Quiz Page](assets/quiz.png)
+![quiz page](public/assets/images/quiz.png)
+
+### Score Page
+![score page](public/assets/images/score.png)
 
 ### Dashboard
-![Dashboard](assets/dashboard.png)
+![Dashboard](public/assets/images/dashboard.png)
 
 ---
 
