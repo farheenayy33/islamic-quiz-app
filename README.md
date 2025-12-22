@@ -105,9 +105,6 @@ To run this project locally, you need a PHP and MySQL environment like **XAMPP**
 ### Dashboard
 ![Dashboard](assets/dashboard.png)
 
-### Video Demo
-<video src="assets/quiz-demo.mp4" width="600" controls></video>
-
 ---
 
 ## Notes
