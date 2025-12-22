@@ -39,29 +39,29 @@ To run this project locally, you need a PHP and MySQL environment like **XAMPP**
 
 ### Steps
 
-1. **Clone the repository**
+1. ### Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/farheenayy33/islamic-quiz-app.git
    ```
-2. **Copy project files** to your local server directory
+2. ### Copy project files** to your local server directory
 
-   * For XAMPP: `C:\xampp\htdocs\your-project-folder`
+    For XAMPP: `C:\xampp\htdocs\your-project-folder`
 
-3. **Create the database**
+3. ### Create the database**
 
-   * Open phpMyAdmin (`http://localhost/phpmyadmin`)
-   * Create a new database, e.g., `islamic_quiz`
-   * Import the provided `database.sql` (or create tables manually):
+    Open phpMyAdmin (`http://localhost/phpmyadmin`)
+    Create a new database, e.g., `islamic_quiz`
+    Import the provided `database.sql` (or create tables manually):
 
-     * `user` – stores registered users
-     * `quiz` – quiz categories
-     * `question` – questions for all categories
-     * `results` – user progress
+     `user` – stores registered users
+      `quiz` – quiz categories
+     `question` – questions for all categories
+     `results` – user progress
 
-4. **Configure database connection**
+4. ### Configure database connection**
 
-   * Open `api/form.php` and other PHP files that connect to the DB
-   * Update:
+    Open `api/form.php` and other PHP files that connect to the DB
+    Update:
 
      ```php
      $servername = "localhost";
@@ -70,13 +70,13 @@ To run this project locally, you need a PHP and MySQL environment like **XAMPP**
      $dbname = "islamic_quiz"; // your database name
      ```
 
-5. **Start the server**
+5. ### Start the server**
 
-   * Start **Apache** and **MySQL** in XAMPP
+    Start **Apache** and **MySQL** in XAMPP
 
-6. **Open the app**
+6. ### Open the app**
 
-   * In your browser, go to: `http://localhost/your-project-folder/`
+    In your browser, go to: `http://localhost/your-project-folder/`
 
 ---
 
