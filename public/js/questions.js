@@ -1,12 +1,5 @@
-// ===============================
-// ISLAMIC QUIZ QUESTION BANK
-// ===============================
 
 const questionBank = {
-
-    /* =======================
-       PILLARS OF ISLAM (10)
-       ======================= */
     pillars: [
         {
             question: "How many pillars are there in Islam?",
@@ -70,9 +63,6 @@ const questionBank = {
         }
     ],
 
-    /* =======================
-       PROPHETS (10)
-       ======================= */
     prophets: [
         {
             question: "Who was the first prophet of Islam?",
@@ -136,9 +126,6 @@ const questionBank = {
         }
     ],
 
-    /* =======================
-       QURAN (10)
-       ======================= */
     quran: [
         {
             question: "What is the holy book of Islam?",

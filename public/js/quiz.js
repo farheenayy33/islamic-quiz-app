@@ -10,7 +10,7 @@ let score = 0;
 let selected = null;
 let answered = false;
 let timer;
-let timeLeft = 10 * 60; // 10 minutes
+let timeLeft = 10 * 60;
 
 let quizFinished = false;
 
@@ -21,7 +21,6 @@ const questions = questionBank[category];
 startTimer();
 loadQuestion();
 
-// ---------- TIMER ----------
 function startTimer() {
     updateTimerDisplay();
     timer = setInterval(() => {
@@ -34,7 +33,6 @@ function startTimer() {
         updateTimerDisplay();
     }, 1000);
 }
-
 function updateTimerDisplay() {
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
@@ -43,7 +41,6 @@ function updateTimerDisplay() {
         .padStart(2, "0")}`;
 }
 
-// ---------- LOAD QUESTION ----------
 function loadQuestion() {
     const q = questions[index];
 
@@ -74,16 +71,16 @@ function loadQuestion() {
             selected = i;
             const correct = questions[index].correct;
 
-            // Highlight correct and wrong answers immediately
+
             document.querySelectorAll(".option").forEach((b, idx) => {
-                b.disabled = true; // Disable all buttons immediately
+                b.disabled = true;
 
                 b.classList.remove("border-emerald-300", "border-red-600", "border-green-600", "border-4");
 
                 if (idx === correct) {
-                    b.classList.add("border-green-600", "border-4"); // Correct answer
+                    b.classList.add("border-green-600", "border-4");
                 } else if (idx === selected) {
-                    b.classList.add("border-red-600", "border-4"); // Wrong answer clicked
+                    b.classList.add("border-red-600", "border-4");
                 }
             });
 
@@ -100,7 +97,6 @@ function loadQuestion() {
 
 }
 
-// ---------- SUBMIT ----------
 submitBtn.onclick = () => {
     if (selected === null) return;
 
@@ -109,26 +105,15 @@ submitBtn.onclick = () => {
 
     // Disable all options after submission
     buttons.forEach((btn) => btn.disabled = true);
-
-    // Update score if correct
     if (selected === correct) score++;
-
-    // Show explanation
     explanationEl.textContent = questions[index].explanation;
-
-    // Disable submit button
     submitBtn.disabled = true;
     submitBtn.classList.add("opacity-50");
-
-    // Enable Next/Finish button
     nextBtn.disabled = false;
     nextBtn.classList.remove("opacity-50");
-
-    // Mark question as answered
     answered = true;
 };
 nextBtn.onclick = () => {
-    // LAST QUESTION
     if (index === questions.length - 1) {
         clearInterval(timer);
         quizFinished = true;
@@ -151,9 +136,6 @@ nextBtn.onclick = () => {
     index++;
     loadQuestion();
 };
-
-
-// ---------- SCORE MODAL ----------
 function showScoreModal() {
     if (!quizFinished) return;
 
@@ -197,14 +179,14 @@ function showScoreModal() {
     dashboardBtn.className = "bg-emerald-300 text-white rounded-xl px-6 py-2 w-2/3 hover:scale-105 transition-all mb-3";
     dashboardBtn.textContent = "📊 Dashboard";
     dashboardBtn.onclick = () => {
-        window.location.href = "dashboard.html"; // replace with your actual dashboard page path
+        window.location.href = "dashboard.html";
     };
 
 
-    modal.appendChild(scoreText);      // show score first
-    modal.appendChild(dashboardBtn);   // dashboard button
-    modal.appendChild(againBtn);       // retry quiz
-    modal.appendChild(switchBtn);      // switch category
+    modal.appendChild(scoreText);
+    modal.appendChild(dashboardBtn);
+    modal.appendChild(againBtn);
+    modal.appendChild(switchBtn);
     overlay.appendChild(modal);
     document.body.appendChild(overlay);
 
@@ -227,7 +209,7 @@ function saveHighScore(category, score) {
 const homeBtn = document.getElementById("home-btn");
 if (homeBtn) {
     homeBtn.addEventListener("click", () => {
-    
+
         window.location.href = "index.html";
     });
 }

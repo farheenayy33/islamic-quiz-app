@@ -35,25 +35,13 @@
    .disabled {
        pointer-events: none;
    }
+   .bottom-bar {
+       margin-top: auto;
+   }
 
-  /* .bottom-bar {
-      height: 8vh;
-      width: 100%;
-      background: #ecfdf5;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      font-size: 2vh;
-  } */
-.bottom-bar {
-    margin-top: auto;
-}
-  .bottom-bar button {
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-size: 2.5vh;
-  }
-
-
-  
+   .bottom-bar button {
+       background: none;
+       border: none;
+       cursor: pointer;
+       font-size: 2.5vh;
+   }
