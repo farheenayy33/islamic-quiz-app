@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/signup.css">
+  </head>
+
+  <body
+    class="flex items-center justify-center h-screen bg-[#d1fae5] font-sans"
+  >
+    <div
+      class="app-container w-[24vw] max-w-[400px] h-[96vh] my-[2.5vh] bg-white rounded-[36px] shadow-[0_25px_50px_rgba(0,0,0,0.2)] flex flex-col relative overflow-hidden"
+    >
+      <!-- Stars background (keep your CSS for stars) -->
+      <div class="stars"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+
+      <!-- Form wrapper -->
+      <div
+        class="form-wrapper flex flex-col items-center justify-start p-6 flex-1 relative overflow-y-auto"
+      >
+        <form id="signupForm" class="w-full flex flex-col gap-2">
+          <h2 class="text-center mb-6 text-lg font-semibold">Create Account</h2>
+
+          <div class="input-wrapper relative w-full mb-2">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Full Name"
+              class="w-full p-3 rounded-[14px] border border-gray-300 text-base"
+              required
+            />
+            <div
+              class="disclaimer text-red-700 text-xs mt-1 hidden"
+              id="nameDisc"
+            >
+              Name: letters only, 3-20 characters, no space
+            </div>
+          </div>
+
+          <div class="input-wrapper relative w-full mb-2">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              class="w-full p-3 rounded-[14px] border border-gray-300 text-base"
+              required
+            />
+            <div
+              class="disclaimer text-red-700 text-xs mt-1 hidden"
+              id="emailDisc"
+            >
+              Enter a random email not personal
+            </div>
+          </div>
+
+          <div class="input-wrapper relative w-full mb-2">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              class="w-full p-3 rounded-[14px] border border-gray-300 text-base"
+              required
+            />
+            <div
+              class="disclaimer text-red-700 text-xs mt-1 hidden"
+              id="passDisc"
+            >
+              Password: 6+ chars, include capital, number & special
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full p-3 mt-2 rounded-[16px] bg-[#16d394] text-white text-base font-medium hover:bg-[#1eaf73]"
+          >
+            Start Quiz
+          </button>
+        </form>
+      </div>
+
+      <!-- Bottom navigation bar -->
+      <div
+        class="bottom-bar w-full flex justify-around items-center h-[8vh] bg-[#ecfdf5] rounded-t-xl shadow-inner mt-4 text-lg sm:text-xl"
+      >
+        <button id="home-btn">🏠</button>
+        <button id="dashboard-btn">📊</button>
+        <button id="profile-btn">👤</button>
+      </div>
+    </div>
+    <script src="js/signup.js"></script>
+  </body>
+</html>

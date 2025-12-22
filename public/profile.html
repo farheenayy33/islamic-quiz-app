@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/profile.css" />
+  </head>
+  <body class="bg-[#d1fae5] flex justify-center items-center min-h-screen">
+    <div
+      class="app-container flex flex-col justify-between min-h-[96vh] w-11/12 sm:w-[24vw] max-w-[400px] bg-white rounded-3xl shadow-2xl p-5 relative overflow-hidden"
+    >
+      <div
+        class="flex-grow flex flex-col items-center justify-start w-full gap-6 mt-4"
+      >
+        <div
+          id="avatar"
+          class="w-28 h-28 rounded-full bg-[#16d394] text-white flex items-center justify-center text-4xl font-bold shadow-lg"
+        ></div>
+
+        <h1 id="username" class="text-2xl font-semibold"></h1>
+        <p id="email" class="text-gray-600"></p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4 w-full">
+          <button
+            onclick="startQuiz()"
+            class="w-full sm:w-auto max-w-[140px] px-4 py-2 bg-[#16d394] text-white rounded-lg shadow-md hover:bg-[#13b080] transition text-center whitespace-nowrap"
+          >
+            Start New Quiz
+          </button>
+          <button
+            onclick="goDashboard()"
+            class="w-full sm:w-auto max-w-[140px] px-4 py-2 bg-[#16d394] text-white rounded-lg shadow-md hover:bg-[#13b080] transition text-center whitespace-nowrap"
+          >
+            Go to Dashboard
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div
+        class="bottom-bar w-full flex justify-around items-center h-12 bg-[#ecfdf5] rounded-t-xl rounded-b-3xl shadow-inner text-lg sm:text-xl absolute bottom-0 left-0"
+      >
+        <button id="home-btn" class="text-gray-400">🏠</button>
+        <button id="dashboard-btn" class="text-gray-400">📊</button>
+        <button id="profile-btn" class="text-[#16d394] font-bold">👤</button>
+      </div>
+    </div>
+    <script src="js/profile.js"></script>
+  </body>
+</html>

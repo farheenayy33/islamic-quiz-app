@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quiz Categories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/category.css" />
+  </head>
+
+  <body class="bg-emerald-100 flex justify-center items-center min-h-screen">
+    <!-- APP CONTAINER -->
+    <div
+      class="app-container flex flex-col items-center overflow-y-auto w-[90vw] min-w-[300px] max-w-[400px] h-[90vh] sm:w-[24vw] sm:h-[96vh] bg-white rounded-3xl shadow-2xl pb-0"
+    >
+      <!-- CONTENT WITH PADDING -->
+      <div class="p-4 flex flex-col flex-grow w-full">
+        <!-- LOGO -->
+        <div class="flex justify-center mt-2 mb-4">
+          <div
+            class="w-24 h-24 sm:w-28 sm:h-28 bg-white border-4 border-teal-600 rounded-full flex flex-col items-center justify-center shadow-lg animate-bounce-slow p-2"
+          >
+            <div class="text-center">
+              <div class="text-3xl sm:text-3xl mb-1">📖</div>
+              <div class="text-xs text-teal-600 font-bold">ISLAMIC</div>
+              <div class="text-xs text-teal-600 font-bold">FOUNDATION</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TITLE -->
+        <h1
+          class="text-xl sm:text-2xl font-bold mb-4 animate-fadeIn text-center"
+        >
+          Choose a Quiz Category
+        </h1>
+
+        <!-- CATEGORIES -->
+        <div class="flex-1 w-full grid grid-cols-1 gap-3 px-0">
+          <button
+            class="category-btn flex items-center gap-3 bg-[#ecfdf5] hover:bg-teal-200 p-3 sm:p-4 rounded-xl shadow-md transform transition duration-300 hover:scale-105 animate-slideUp text-sm sm:text-base"
+            data-category="pillars"
+          >
+            <span class="text-2xl sm:text-3xl">🕌</span>
+            <span class="font-semibold">Pillars of Islam</span>
+          </button>
+
+          <button
+            class="category-btn flex items-center gap-3 bg-[#ecfdf5] hover:bg-teal-200 p-3 sm:p-4 rounded-xl shadow-md transform transition duration-300 hover:scale-105 animate-slideUp delay-100 text-sm sm:text-base"
+            data-category="prophets"
+          >
+            <span class="text-2xl sm:text-3xl">👤</span>
+            <span class="font-semibold">Prophets</span>
+          </button>
+
+          <button
+            class="category-btn flex items-center gap-3 bg-[#ecfdf5] hover:bg-teal-200 p-3 sm:p-4 rounded-xl shadow-md transform transition duration-300 hover:scale-105 animate-slideUp delay-200 text-sm sm:text-base"
+            data-category="quran"
+          >
+            <span class="text-2xl sm:text-3xl">📖</span>
+            <span class="font-semibold">Quran</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- BOTTOM BAR (stuck to bottom, full width) -->
+      <div
+        class="bottom-bar w-full flex justify-around items-center h-12 bg-[#ecfdf5] rounded-t-xl shadow-inner text-lg sm:text-xl"
+      >
+        <button id="home-btn" type="button">🏠</button>
+        <button id="dashboard-btn">📊</button>
+        <button id="profile-btn" type="button">👤</button>
+      </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/category.js"></script>
+  </body>
+</html>

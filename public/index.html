@@ -1,0 +1,81 @@
+<!-- this is main page code  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Islamic Quiz App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body
+    class="bg-emerald-100 flex justify-center items-center h-screen overflow-hidden"
+  >
+    <div class="app-container">
+      <!-- HERO / SPLASH -->
+      <div class="hero">
+        <img src="assets/images/mosque.png" alt="App Banner" />
+
+        <div class="hero-overlay">
+          <h1 class="text-3xl font-bold animate-fadeIn">Islamic Quiz App</h1>
+          <p class="text-lg animate-fadeIn delay-200">
+            Test your Islamic knowledge
+          </p>
+
+          <button class="start-btn animate-fadeIn delay-400">Start</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="feature-card animate-slideUp delay-100">
+          <div class="feature-icon">⏱</div>
+          <div>
+            <h3>10 Minute Timer</h3>
+            <p>Each quiz has a fixed time limit</p>
+          </div>
+        </div>
+
+        <div class="feature-card animate-slideUp delay-200">
+          <div class="feature-icon">📚</div>
+          <div>
+            <h3>Islamic Categories</h3>
+            <p>Pillars, Prophets & Quran</p>
+          </div>
+        </div>
+
+        <div class="feature-card animate-slideUp delay-300">
+          <div class="feature-icon">🧠</div>
+          <div>
+            <h3>Smart Questions</h3>
+            <p>One question at a time with explanation</p>
+          </div>
+        </div>
+
+        <div class="feature-card animate-slideUp delay-400">
+          <div class="feature-icon">🏆</div>
+          <div>
+            <h3>Score Summary</h3>
+            <p>See your result at the end</p>
+          </div>
+        </div>
+
+        <!-- Placeholder for Quiz -->
+        <div id="app" class="quiz-container"></div>
+      </div>
+
+      <!-- BOTTOM BAR -->
+      <div
+        class="bottom-bar w-full flex justify-around items-center h-12 bg-[#ecfdf5] rounded-t-xl shadow-inner mt-4 text-lg sm:text-xl"
+      >
+        <button id="home-btn">🏠</button>
+        <button id="dashboard-btn">📊</button>
+        <button id="profile-btn">👤</button>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+
+  <body>
+    <div class="app-container">
+      <h2 class="title">My Progress</h2>
+      <div class="charts-container">
+        <div class="chart chart-pillars" id="chart-pillars">
+          <div class="circle">
+            <div class="fill"></div>
+            <div class="inside-circle" id="score-pillars">0%</div>
+          </div>
+          <p>Pillars of Islam</p>
+        </div>
+
+        <div class="chart chart-prophets" id="chart-prophets">
+          <div class="circle">
+            <div class="fill"></div>
+            <div class="inside-circle" id="score-prophets">0%</div>
+          </div>
+          <p>Prophets</p>
+        </div>
+
+        <div class="chart chart-quran" id="chart-quran">
+          <div class="circle">
+            <div class="fill"></div>
+            <div class="inside-circle" id="score-quran">0%</div>
+          </div>
+          <p>Quran</p>
+        </div>
+
+        <div class="chart chart-overall" id="chart-overall">
+          <div class="circle">
+            <div class="fill"></div>
+            <div class="inside-circle" id="score-overall">0%</div>
+          </div>
+          <p>Overall Progress</p>
+        </div>
+      </div>
+
+      <div class="back-box">
+        <button class="back-btn" onclick="location.href='index.html'">
+          ⬅ Back Home
+        </button>
+      </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
