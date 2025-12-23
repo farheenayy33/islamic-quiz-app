@@ -18,7 +18,7 @@ function saveHighScore(category, score) {
         localStorage.setItem("islamicQuizHighScores", JSON.stringify(scores));
     }
 
-    updateCharts(); /
+    updateCharts();
 }
 function animateFill(chartId, percentage) {
     const chart = document.getElementById(chartId);
