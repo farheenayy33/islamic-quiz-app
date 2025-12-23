@@ -90,11 +90,13 @@ To run this project locally, you need a PHP and MySQL environment like **XAMPP**
 ---
 
 ## Screenshots & Demo
+### Home
+![Home ](public/assets/images/home.png)
 
 ### Signup Page
 ![Signup Page](public/assets/images/signup.png)
-### Home
-![Home ](public/assets/images/home.png)
+### Category Page
+![Category Page](public/assets/images/category.png)
 
 ### Quiz Page
 ![quiz page](public/assets/images/quiz.png)
@@ -104,6 +106,8 @@ To run this project locally, you need a PHP and MySQL environment like **XAMPP**
 
 ### Dashboard
 ![Dashboard](public/assets/images/dashboard.png)
+### Profile
+![Profile](public/assets/images/profile.png)
 
 ---
 
