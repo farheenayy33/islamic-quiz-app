@@ -71,7 +71,7 @@ function loadQuestion() {
             selected = i;
             const correct = questions[index].correct;
 
-
+            // red green border logic
             document.querySelectorAll(".option").forEach((b, idx) => {
                 b.disabled = true;
 
