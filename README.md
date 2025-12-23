@@ -30,7 +30,7 @@ A full-stack web application to take Islamic quizzes, track progress, and store 
 
 ## Getting Started (Run Locally)
 
-To run this project locally, you need a PHP and MySQL environment like **XAMPP** or **MAMP**.
+To run this project locally, you need a PHP and MySQL environment like **XAMPP**
 
 ### Prerequisites
 
@@ -54,10 +54,7 @@ To run this project locally, you need a PHP and MySQL environment like **XAMPP**
     Import the provided `database.sql` (or create tables manually):
 
      `user` – stores registered users
-      `quiz` – quiz categories
-     `question` – questions for all categories
-     `results` – user progress
-
+     
 4. ### Configure database connection**
 
     Open `api/form.php` and other PHP files that connect to the DB
