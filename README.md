@@ -54,6 +54,7 @@ To run this project locally, you need a PHP and MySQL environment like **XAMPP**
     Import the provided `database.sql` (or create tables manually):
 
      `user` – stores registered users
+
      
 4. ### Configure database connection**
 
@@ -85,7 +86,7 @@ To run this project locally, you need a PHP and MySQL environment like **XAMPP**
 
   * `user` – stores `{ name, email }` from signup
   * `selectedCategory` – stores the currently selected quiz category
-  * `islamicQuizHighScores` – stores user quiz scores
+  * `islamicQuizHighScores` – stores user quiz scores category wise 
 
 ---
 
@@ -112,7 +113,7 @@ To run this project locally, you need a PHP and MySQL environment like **XAMPP**
 ---
 
 ## Notes
-
+Github page link :https://farheenayy33.github.io/islamic-quiz-app/
 * **GitHub Pages cannot run PHP or MySQL**, so live demo is **not possible on GitHub**.
 * You can only host this project for **live demo** on a server that supports PHP & MySQL.
 
